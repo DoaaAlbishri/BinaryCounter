@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XZm-pU-CHj">
-                            <rect key="frame" x="0.0" y="101" width="414" height="72"/>
+                            <rect key="frame" x="0.0" y="92" width="414" height="72"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.41095938128824333" green="0.52821159639848125" blue="0.85051546391752575" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="27"/>
@@ -24,11 +25,11 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="34" id="53c-NQ-Fct" customClass="CustomCell" customModule="Binary_Counter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="34"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="25" id="53c-NQ-Fct" customClass="CustomCell" customModule="Binary_Counter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="25"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="53c-NQ-Fct" id="KFb-Ag-UtZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="25"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nb7-2T-Cyb">
@@ -66,7 +67,6 @@
                                     </subviews>
                                     <color key="backgroundColor" red="0.0" green="0.28682948412274112" blue="0.60309278350515472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
-                                        <constraint firstItem="nb7-2T-Cyb" firstAttribute="height" secondItem="KFb-Ag-UtZ" secondAttribute="height" multiplier="0.352273" id="3I1-S9-QN1"/>
                                         <constraint firstAttribute="trailing" secondItem="3pK-WX-9aq" secondAttribute="trailing" id="CrL-2I-vqI"/>
                                         <constraint firstAttribute="trailing" secondItem="nb7-2T-Cyb" secondAttribute="trailing" constant="379" id="daq-wh-5Qj"/>
                                         <constraint firstItem="3pK-WX-9aq" firstAttribute="leading" secondItem="e3L-Pw-hpT" secondAttribute="trailing" constant="32" id="fgg-qN-i4f"/>
@@ -89,6 +89,12 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fve-XM-Wnz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="HNO-bV-6Dv">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="fbd-jv-PNQ"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="-284.05797101449275" y="47.544642857142854"/>
         </scene>
